@@ -1,0 +1,7 @@
+{
+  "preset": "@shelf/jest-dynamodb",
+  "transform": {
+    ".*\\.ts": "ts-jest",
+    ".*\\.js": "babel-jest"
+  }
+}
