@@ -9,6 +9,12 @@ const config = {
       AttributeDefinitions: [{AttributeName: 'id', AttributeType: 'S'}],
       ProvisionedThroughput: {ReadCapacityUnits: 1, WriteCapacityUnits: 1},
     },
+    {
+      TableName: 'products',
+      KeySchema: [{AttributeName: 'id', KeyType: 'HASH'}],
+      AttributeDefinitions: [{AttributeName: 'id', AttributeType: 'S'}],
+      ProvisionedThroughput: {ReadCapacityUnits: 1, WriteCapacityUnits: 1},
+    },
     // etc
   ],
   port: 8000,
